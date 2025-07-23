@@ -60,7 +60,7 @@ input_data = np.array([[
 # Predict button
 if st.button("🔍 Predict CKD"):
     result = model.predict(input_data)[0]
-    if result == 0:
+    if result == 1:
         st.error("⚠️ Likely Chronic Kidney Disease detected!")
     else:
         st.success("✅ No signs of Chronic Kidney Disease.")
