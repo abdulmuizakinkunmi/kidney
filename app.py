@@ -3,7 +3,7 @@ import numpy as np
 import joblib
 
 # Load trained model
-model = joblib.load("kidney_disease_model.pkl")
+model = joblib.load("decision_tree_model.pkl")
 
 st.set_page_config(page_title="CKD Predictor", layout="centered")
 st.title("🩺 Chronic Kidney Disease Prediction")
